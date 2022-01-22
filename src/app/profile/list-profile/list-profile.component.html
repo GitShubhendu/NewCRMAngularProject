@@ -1,0 +1,27 @@
+
+<p>list-profile works!</p>
+<hr class="bg-primary">
+<h2>The User List Name:  {{userList}}</h2>
+<br>
+<button (click)="resteParent()">Reset User List</button>
+<hr>
+<h3>Profile List</h3>
+<hr>
+<ul *ngFor="let user of profileList">
+    <li>
+       {{user.name}} || {{user.email}}
+    </li>
+</ul> 
+<hr class="bg-primary">
+<p>{{data}}</p>
+<hr>
+<p>Work Status:-    {{newObsData}}</p>
+<hr>
+<h1>Fun with Portals</h1>
+     <!-- <p>Click this button to open a portal:</p>
+    <button onclick="window.open('/layer','newwindow','width=1800,heigth=1600')">open me!</button>  -->
+  
+<a href="../../new.html"> click me to get data</a>
+
+
+
